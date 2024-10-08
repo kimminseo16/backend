@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bigbox{width: 1000px;
+                height: 1000px;
+                border: 1px dotted #333;
+                margin: 100px auto 0;
+                position: relative;}
+        .face{position: absolute;
+              width:1000px;
+              height: 1000px;
+              border: 10px solid black;
+              border-radius: 50%;
+              background-color: rgb(104, 104, 235);}
+        .eye{position: absolute;
+             width: 50px;
+             height: 50px;
+             border: 1px solid black;
+             border-radius: 50%;
+             background-color: black;}
+        .eye.left{top: 350px; left: 200px;}
+        .eye.right{top: 350px; right: 200px;}
+        .nose{position: absolute;
+             width: 70px;
+             height: 70px;
+             border: 1px solid black;
+             border-radius: 50%;
+             background-color: black;
+             top: 600px; left:50%; margin-left: -35px;
+             z-index: 1;}
+        .mouth{position: absolute;
+                width: 200px; height: 100px;
+                background-color: white;
+                border: 10px solid black;
+                border-radius: 50%;}
+        .mouth.left{top: 635px; left:50%; margin-left: -50px;
+                    /* transform-origin: right center; */
+                    transform: rotate(45deg);}
+        .mouth.right{top: 635px; right: 50%; margin-right: -50px;
+                    /* transform-origin: left center; */
+                    transform: rotate(-45deg)}
+        .coverbox{position: absolute;
+                  width: 300px;
+                  height: 200px; 
+                  border: 1px dotted black;}
+        .coverbox.left{top: 630px; left: 20%;}
+        .coverbox.right{top: 630px; right: 20%;}
+        .line{position: absolute;
+            width: 200px;
+            height: 30px;
+            background-color: black;}
+        .lline1{transform-origin: right center ; transform: rotate(20deg)}
+        .lline2{top: 40px; transform-origin: right center;  transform: rotate(0deg)}
+        .lline3{top: 80px; transform-origin: right center ; transform: rotate(-20deg)}
+            
+    </style>
+</head>
+<body>
+    <div class="bigbox">
+        <div class="face">
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="nose"></div>
+            <div class="mouth left"></div>
+            <div class="mouth right"></div>
+            <div class="coverbox left">
+                <div class="line lline1"></div>
+                <div class="line lline2"></div>
+                <div class="line lline3"></div>
+            </div>
+            <div class="coverbox right">
+                <div class="line rline1"></div>
+                <div class="line rline2"></div>
+                <div class="line rline3"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

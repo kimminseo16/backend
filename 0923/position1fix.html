@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>static</title>
+    <style>
+        body{height: 3000px;}
+        .box{width: 200px;
+              height: 200px;}
+        .box1{background-color: red;}
+        .box2{background-color: blue;}
+        .box3{background-color: green;
+              position: fixed;
+             
+              bottom: 50%;
+              right: 50%;}
+        .box4{background-color: gray;}
+        /* 1.자리값이 없다
+           2.right,bottom
+           3.부모relative 주어 기준을 변경가능
+           4.부모(부모가 없으면 브라우저 화면)
+           5.겹칠수있다 */
+    </style>
+</head>
+<body>
+    <div class="box box1">박스1</div>
+    <div class="box box2">박스2</div>
+    <div class="box box3">박스3</div>
+    <div class="box box4">박스4</div>
+</body>
+</html>

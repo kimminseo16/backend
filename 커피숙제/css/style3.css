@@ -1,0 +1,56 @@
+*{margin: 0; padding: 0;}
+.content{overflow: hidden;}
+.wrap{width: 800px;
+      margin: 0 auto;}
+header{width: 800px;
+       padding-bottom: 220px;
+       /* overflow: hidden; */
+       background: url(../images/top.jpg) no-repeat center top;
+       position: relative;}      
+header h1{position:absolute;
+          bottom: 30px;
+          right: 30px;
+          color: white;}
+nav{height: 60px;
+    background-color: #6b2903;}
+nav ul{list-style: none;}
+nav ul li{float: left;
+          margin-left: 40px;
+          margin-top: 15px;}
+nav ul li a{display: block;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            text-decoration: none;
+            color: white;
+            margin-left: 10px;}
+nav ul li a:hover{background-color: #332d2e;
+                  color: #fff;
+                  border-radius: 20px;}
+.content section{width: 550px;
+                 height: 550px;
+                 float: left;
+                 background-color: gray;}
+section article{border: 1px solid #333;
+                width: 230px; height: 170px;
+                float: left;
+                background-color: white;
+                margin: 30px 0 10px 30px;
+                background: url(../images/kong.png) no-repeat;}
+section h4{background: url(../images/kong.png) no-repeat;
+            padding-left: 20px;}
+aside{width: 250px;
+    height: 550px;
+    float: right;
+    background-color: rgb(112, 42, 42);
+    text-align: center;}
+section h3{text-align: center;
+            margin-top: 15px;}
+img{width: 150px; height: 150px;}
+footer{text-align: center;
+       line-height: 30px;
+       background-color: #333;
+       color: white;
+       height: 50px;
+    }

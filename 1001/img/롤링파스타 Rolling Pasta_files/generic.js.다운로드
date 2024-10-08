@@ -1,0 +1,35 @@
+
+
+//브라우져 구별함수
+function jXrBrowserDis(){
+	var xBrowStr = navigator.userAgent.toLowerCase();
+	var xBrowName = "ET";
+
+	//Internet Explorer 버전 차이때문에 다시 분류
+	if(xBrowStr.indexOf("msie") != -1) {
+		if(xBrowStr.indexOf("msie 10") != -1 || xBrowStr.indexOf("msie 9") != -1) {
+			xBrowName = "FF"
+		}else {
+			xBrowName = "IE"
+		}
+	}
+	if(xBrowStr.indexOf("firefox") != -1) xBrowName = "FF"              //FireFox
+	
+	return xBrowName;
+}
+
+	
+//키 이벤트객체 반환 함수
+function jXrKeyEvent(ixEv){
+	var iQBrowser = jXrBrowserDis();
+	var iQEvtObj
+	
+	if(iQBrowser == "IE"){
+		iQEvtObj = window.event.keyCode;
+	}
+	else{
+		iQEvtObj = ixEv.which
+	}
+
+	return iQEvtObj;
+}

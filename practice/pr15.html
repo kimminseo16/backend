@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100%;
+        }
+        .mainbox{
+            width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .mainbox>.box{
+            position: relative;
+            flex-wrap: wrap;
+            width: 350px;
+            height: 150px;
+        }
+        .txtbox{
+            position: absolute;
+            top: 10px;
+            right: 40px;
+
+        }
+        .imgbox{
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            width: 75px;
+            height: 75px;
+            /* border: 1px dotted #292929; */
+            border-radius: 50%;
+        }
+        .imgbox1{background: url(img/icon_quickmenu.png)no-repeat 0 0; }
+        .imgbox2{background: url(img/icon_quickmenu.png)no-repeat 33% 0; }
+        .imgbox3{background: url(img/icon_quickmenu.png)no-repeat 66% 0; }
+        .imgbox4{background: url(img/icon_quickmenu.png)no-repeat 100% 0; }
+
+        footer{position: relative;
+                width: 100%;
+                background-color: #292929;}
+        .toptxt{
+            width: 100%;
+            overflow: hidden;
+            border-bottom: 2px solid white;
+        }
+        ul{list-style: none;}
+        ul li{float: left;
+            padding: 20px;
+            color: white;}
+        .bottxt{
+            color: white;
+            padding: 20px;
+        }
+    
+        span::after{
+            content: '';
+            width: 1px;
+            height: 15px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="mainbox">
+            <div class="box box1">
+                <div class="imgbox imgbox1"></div>
+                <div class="txtbox">
+                    <h2>프랜차이즈</h2>
+                    <p>개설절차/투자비용</p>
+                </div>
+            </div>
+            <div class="box box2">
+                <div class="imgbox imgbox2"></div>
+                <div class="txtbox">
+                    <h2>지사안내</h2>
+                    <p>수도권/지방 지사정보</p>
+                </div>
+            </div>
+            <div class="box box3">
+                <div class="imgbox imgbox3"></div>
+                <div class="txtbox">
+                    <h2>광고영상</h2>
+                    <p>TV광고/동영상</p>
+                </div>
+            </div>
+            <div class="box box4">
+                <div class="imgbox imgbox4"></div>
+                <div class="txtbox">
+                    <h2>고객문의</h2>
+                    <p>자주하는질문/1:1질문</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="toptxt">
+                <ul>
+                    <li>이용약관</li>
+                    <li>개인정보처리방침</li>
+                    <li>써브카드</li>
+                    <li>점주관리자</li>
+                </ul>
+            </div>
+            <div class="bottxt">
+                <p><span>서울시 서초구 강남대로 535 프린스빌딩 15층</span>
+                    <span>서울시 서초구 강남대로 535 프린스빌딩 15층</span>
+                    <span>서울시 서초구 강남대로 535 프린스빌딩 15층</span>
+                    <span>서울시 서초구 강남대로 535 프린스빌딩 15층</span><br>
+                    SUBWAY®is a Registered Trademark of Subway IP LLC.ⓒ2021 Subway IP LLC.All Rights Reserved
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .wrap{position: relative;
+            width: 830px;
+            height: 310px;
+            border: 1px solid #333;
+            margin: 100px auto 0;}
+        .box{position: absolute;
+            width: 200px; height: 150px}
+        .box img{display: block;}
+        .box::after{background-color: rgba(0,0,255,0.5);
+                    content: "";
+                    width: 0;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transition: all 0.5s;}        
+        .box:hover::after{width: 100% ;}
+        .box1{top: 0; left: 0;}
+        .box2{top: 160px; left: 0;}
+        .box3{top: 0; left: 210px;
+            width: 200px;
+            height: 310px;}
+        .box4{top: 0; right: 210px;}
+        .box5{top: 0; right: 0;}
+        .box6{top: 160px; right: 0;
+                width: 410px;
+                height: 150px;}
+                .box6::after{
+                    width: 100%;
+                    height: 0%;}        
+        .box6:hover::after{height: 100% ;}
+        .box p {position: absolute;
+                width: 100%;    
+                height: 100%;
+                left: 0;
+                top: 0;
+                padding-top: 30px;
+                box-sizing: border-box;
+                color: #fff;
+                text-align: center;
+                transition: all 0.4s;
+                opacity: 0;
+                background: url(images/more.png) no-repeat 50% 80%; 
+                z-index: 1;}
+        .box:hover p{opacity: 1;}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box box1">
+          <img src="images/women1.jpg" alt="w1" />
+          <p>국내유일 청정대나무<br>참이슬fresh</p>
+        </div>
+        <div class="box box2">
+          <img src="images/women2.jpg" alt="w2" />
+        </div>
+        <div class="box box3">
+          <img src="images/aaa1.jpg" alt="aaa1" />
+        </div>
+        <div class="box box4">
+          <img src="images/women3.jpg" alt="w3" />
+        </div>
+        <div class="box box5">
+          <img src="images/women4.jpg" alt="w3" />
+        </div>
+        <div class="box box6">
+          <img src="images/bbb1.jpg" alt="w3" />
+        </div>
+      </div>
+</body>
+</html>

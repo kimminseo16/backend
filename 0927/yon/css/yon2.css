@@ -1,0 +1,74 @@
+*{margin: 0; padding: 0;}
+ul{list-style:none;}
+a{text-decoration: none; color: #333;}
+.cf::after{content: "";
+            display: block;
+            clear: both;}
+header{width: 1000px;
+        height: 250px;
+        border: 1px solid #333;
+        margin: 0 auto;
+        position: relative;}
+header .sns{position: absolute;
+            top: 20px;
+            left: 10px;}
+header .sns li{float: left;
+                margin-left: 10px;}
+header .inb{position: absolute;
+            top: 10px;
+            right: 10px;}
+header .inb li{float: left;
+                font-size: 13px;
+                padding: 10px;}
+header .inb li{background: url(../images/bar.png) no-repeat 0 50%}
+header .inb li:first-child{background:none ;}
+header .logo{width: 200px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50% ,-50%);}
+header .logo img{width: 100%;}
+.gnb{position: absolute;
+    top: 220px;
+    left: 0;
+    width: 100%;}
+.gnb>li{float: left;
+        background-color: rgba(255,0,0,0.5);
+        position: relative;}
+.gnb li a{display: block;
+        width: 200px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+        font-weight: bold;}
+.header_nav ul li ul li a{display: block;
+        width: 200px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        color: #666;
+        font-size: 14px;
+        font-weight: bold;
+        padding-top: 20px;
+        text-indent: 25px;}
+.header_nav ul li ul{
+        position: absolute;
+        width: 200px;
+        height: 450px;
+        border-left: 1px solid #ddd;
+        display: none;}
+.header_nav ul:hover li ul{display: block;}
+.header_shadow{position: absolute;
+                width: 100%;
+                background-color: aqua;
+                top: 71px;
+                left: 0;
+                height: 0;}
+.header_nav ul:hover + .header_shadow{height: 450px;
+                                        border-bottom: 1px solid #ddd;}
+.header_nav ul li:last-child ul{border-right: 1px solid #ddd;}
+.gnb li ul{position: absolute;
+        background-color:rgba(255,0,0,0.5) ;
+        display: none;}
+.gnb li:hover ul{display: block;}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>플렉스 박스</title>
+	<style>
+        #container{width: 600px;
+                    height: 200px;
+                    border: 1px solid #000;
+                    display: flex;
+                    background-color: gray;}
+        div{width: 200px;
+            height: 200px;
+            border: 1px solid #000;}
+        #box1{order: 2;}
+        #box2{order: 3;}
+        #box3{order: 1;}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="box1"><h2>box1</h2></div>
+		<div id="box2"><h2>box2</h2></div>
+		<div id="box3"><h2>box3</h2></div>
+	</div>
+</body>
+</html>
